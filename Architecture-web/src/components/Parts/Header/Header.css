@@ -1,0 +1,31 @@
+#header
+{
+  height: 50px;
+  /* font-family: 'Bellefair', serif; */
+  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel Decorative', cursive;
+  /* font-weight: bold; */
+  
+  /* font-size:10px; */
+   /* background-color: rgba(127, 127, 127, 0.4); */
+  
+}
+
+
+.txtFont
+{
+  font-family: 'Cinzel', serif;
+}
+
+/* .secondTitle
+{
+  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel Decorative', cursive;
+} */
+
+/* .headerSize
+{
+  font-size: 20px;
+} */
+
+ 

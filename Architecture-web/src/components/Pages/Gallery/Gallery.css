@@ -1,0 +1,32 @@
+.bgProj
+{
+  background-color: rgb(23,24,27);
+  
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.quote
+{
+  font-size: 30px;
+}
+
+.Sequote
+{
+  font-size: 15px;
+  font-family: 'Cinzel', serif;
+  
+}
+
+.fiquote
+{
+  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.txtHeaderColor3
+{
+  color: white;
+}

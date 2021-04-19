@@ -1,0 +1,15 @@
+.servicesBg
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.servicesTxt
+{
+    font-family: 'Cinzel', serif;
+    color: rgb(173,154,140);
+    font-weight: bolder;
+}
+
+.line {
+    border: 1px solid rgb(173,154,140);
+}

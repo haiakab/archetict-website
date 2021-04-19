@@ -1,0 +1,35 @@
+.material_box
+{
+    height: auto;
+    width: 550px;
+    background-color: rgba(255, 255, 255, 0);
+    /* margin-left: 50.7%;
+    margin-top: 50%; */
+}
+
+#plate
+{
+  height: auto;
+}
+
+#work
+{
+    height: 450px;
+}
+
+.circles
+{
+  /* width: 10%; */
+  font-size: 10px;
+}
+
+.img-circular{
+ width: 100px;
+ height: 100px;
+ /* background-image: url('https://placehold.it/100x100'); */
+ /* background-size: cover;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+  -moz-border-radius: 100px; */
+}

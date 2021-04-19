@@ -1,0 +1,37 @@
+.infoArea
+{
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.infoBox
+{
+    height: 100%;
+}
+
+.infoBox p
+{
+    font-family: 'Cinzel', serif;
+    color: white;
+    
+   
+}
+
+.horiz-line {
+    border: 1px solid white;
+}
+
+.vert-line {
+    border: 1px solid white;
+   
+  }
+
+  .InfoSeparator
+  {
+      height: 10px;
+  }
+
+  .imageProj
+  {
+      height: 100px;
+  }

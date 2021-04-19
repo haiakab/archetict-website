@@ -1,0 +1,26 @@
+.mainBody
+{
+    height:auto;
+    /* width: 90%; */
+    margin-top:30px;
+    padding: 0;
+    box-shadow:20px 20px 50px 15px black;
+    background-image: url("../../../img/mainBg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative;
+}
+
+.header1
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(173,154,140);
+    /* color:black; */
+    /* height: 100px; */
+}
+
+.txtHeaderColor
+{
+    color: rgb(173,154,140);
+}

@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/haiakab/Architecture-webstatic/css/main.42e95874.chunk.css",
+    "main.js": "/haiakab/Architecture-webstatic/js/main.75d1345c.chunk.js",
+    "main.js.map": "/haiakab/Architecture-webstatic/js/main.75d1345c.chunk.js.map",
+    "runtime-main.js": "/haiakab/Architecture-webstatic/js/runtime-main.369591f0.js",
+    "runtime-main.js.map": "/haiakab/Architecture-webstatic/js/runtime-main.369591f0.js.map",
+    "static/js/2.30076480.chunk.js": "/haiakab/Architecture-webstatic/js/2.30076480.chunk.js",
+    "static/js/2.30076480.chunk.js.map": "/haiakab/Architecture-webstatic/js/2.30076480.chunk.js.map",
+    "static/js/3.f8e0a296.chunk.js": "/haiakab/Architecture-webstatic/js/3.f8e0a296.chunk.js",
+    "static/js/3.f8e0a296.chunk.js.map": "/haiakab/Architecture-webstatic/js/3.f8e0a296.chunk.js.map",
+    "index.html": "/haiakab/Architecture-webindex.html",
+    "static/css/main.42e95874.chunk.css.map": "/haiakab/Architecture-webstatic/css/main.42e95874.chunk.css.map",
+    "static/js/2.30076480.chunk.js.LICENSE.txt": "/haiakab/Architecture-webstatic/js/2.30076480.chunk.js.LICENSE.txt",
+    "static/media/Proj.css": "/haiakab/Architecture-webstatic/media/3.8c86ae58.JPG",
+    "static/media/ContactUs.css": "/haiakab/Architecture-webstatic/media/cntctUs11.38f249b4.png",
+    "static/media/logo.1daed340.png": "/haiakab/Architecture-webstatic/media/logo.1daed340.png",
+    "static/media/logo.6ce24c58.svg": "/haiakab/Architecture-webstatic/media/logo.6ce24c58.svg",
+    "static/media/Home.css": "/haiakab/Architecture-webstatic/media/mainBg.f8b3bc6b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.369591f0.js",
+    "static/js/2.30076480.chunk.js",
+    "static/css/main.42e95874.chunk.css",
+    "static/js/main.75d1345c.chunk.js"
+  ]
+}

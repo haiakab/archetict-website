@@ -1,0 +1,58 @@
+
+.carditem
+{
+    box-shadow: 20px 10px 20px  0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:1000px;
+}
+.card
+{
+  border-radius:1000px;
+}
+
+.cardIcon
+{
+  font-size: 30px;
+}
+
+
+.modalBg
+{
+  box-shadow: 10px 10px 30px 300px rgba(0, 0, 0,0.5), 20px 20px 20px 20px rgba(0, 0, 0, 0.19);
+  /* background-color: rgba(127, 127, 127,0.9); */
+}
+
+.titleFont
+{
+  font-family: 'Cinzel', serif;
+  /* font-family: 'Cinzel Decorative', cursive; */
+}
+
+.closeIcon
+{
+  font-size: larger;
+}
+.txtHeaderColor2
+{
+  color: black;
+}
+
+.headerSeparator
+{
+  border: 0.5px solid #dee2e6;
+   width:85%; 
+}
+
+.modalHead
+{
+  width: 75%;
+}
+
+/* .modal-dialog
+{
+  background-color: rgba(127, 127, 127,0.5);
+} */
+
+.modal-content
+{
+  background-color: rgba(127, 127, 127,0.9);
+}

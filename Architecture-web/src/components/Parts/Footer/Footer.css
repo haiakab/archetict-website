@@ -1,0 +1,48 @@
+#footer
+{
+  height:auto;
+  /* background-color: rgba(127, 127, 127, 1); */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(173,154,140);
+}
+
+#footer ul li a
+{
+  /* color: black; */
+  color: rgb(173,154,140);
+}
+
+.separator
+{
+  display: flex;
+  justify-content: center;
+}
+
+.hr_1 {
+  border: 2px solid rgb(173,154,140);
+}
+
+.square {
+  position: absolute;
+  height: 30px;
+  width: 150px;
+  /* background-color: #555; */
+  /* background-color: black; */
+/*   mix-blend-mode: mixed; */
+   /* margin-left:41%;  */
+  margin-top:-12px;
+  /* mix-blend-mode: darken; */
+  mix-blend-mode:mixed;
+   background-color: rgb(173,154,140);
+}
+
+.txtFont
+{
+  font-family: 'Cinzel', serif;
+}
+
+#aboutUs
+{
+  /* background-color: rgba(127, 127, 127, 0.8); */
+  color:rgb(173,154,140);
+}
