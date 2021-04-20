@@ -8,6 +8,13 @@
   /* box-shadow: 0 6px 100px 0 rgba(23,24,27, 0.2), 0 6px 200px 0 rgba(23,24,27, 0.19); */
 }
 
+.collapseItm
+{
+  height: 500px;
+  width: 250px;
+}
+
+
 .card {
     transition: .3s all;
     border-radius: 3px;
@@ -157,8 +164,9 @@
     box-shadow: 10px 10px 30px 300px rgba(0, 0, 0,0.5), 20px 20px 20px 20px rgba(0, 0, 0, 0.19);
    
   }
+  */
   .mapModal
   {
     height: 602px;
     width: 500px;
-  } */
+  } 

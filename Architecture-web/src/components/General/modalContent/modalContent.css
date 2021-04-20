@@ -1,0 +1,26 @@
+.modalBg
+{
+  box-shadow: 10px 10px 30px 300px rgba(0, 0, 0,0.5), 20px 20px 20px 20px rgba(0, 0, 0, 0.19);
+  /* background-color: rgba(127, 127, 127,0.9); */
+}
+
+.titleFont
+{
+  font-family: 'Cinzel', serif;
+  /* font-family: 'Cinzel Decorative', cursive; */
+}
+.closeIcon
+{
+  font-size: larger;
+}
+
+.modalHead
+{
+  width: 75%;
+}
+
+
+.map-modal
+{
+  height: 1000px;
+}

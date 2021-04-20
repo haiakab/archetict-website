@@ -15,22 +15,22 @@
 }
 
 
-.modalBg
+/* .modalBg
 {
   box-shadow: 10px 10px 30px 300px rgba(0, 0, 0,0.5), 20px 20px 20px 20px rgba(0, 0, 0, 0.19);
   /* background-color: rgba(127, 127, 127,0.9); */
-}
+/* }  */
 
-.titleFont
+/* .titleFont
 {
   font-family: 'Cinzel', serif;
   /* font-family: 'Cinzel Decorative', cursive; */
-}
+/* }  */
 
-.closeIcon
+/* .closeIcon
 {
   font-size: larger;
-}
+} */
 .txtHeaderColor2
 {
   color: black;
@@ -42,10 +42,10 @@
    width:85%; 
 }
 
-.modalHead
+/* .modalHead
 {
   width: 75%;
-}
+} */
 
 /* .modal-dialog
 {
@@ -55,4 +55,10 @@
 .modal-content
 {
   background-color: rgba(127, 127, 127,0.9);
+}
+
+
+.map-modal
+{
+  height: 1000px;
 }

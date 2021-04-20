@@ -5,8 +5,8 @@ import './Maps.css'
 export class MapContainer extends Component {
     render() {
         const mapStyles = {
-            width: '100%',
-            height: '100%',
+            width: '602px',
+            height: '500px',
           };
         return (
             <Map
