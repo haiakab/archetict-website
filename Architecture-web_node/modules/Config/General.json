@@ -1,0 +1,6 @@
+{
+    "nodeJs": {
+      "HOST": "localhost",
+      "PORT": 8081
+    }
+  }
