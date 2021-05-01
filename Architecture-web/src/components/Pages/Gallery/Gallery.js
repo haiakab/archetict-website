@@ -1,15 +1,26 @@
 import React, { Component } from 'react'
 import Header from '../../Parts/Header/Header'
 import Card from '../../General/Cards/Card'
-import CategoriesJSON from '../../../Json/Categories'
+// import CategoriesJSON from '../../../Json/Categories'
 import Simple_Footer from '../../Parts/Footer/Simple_Footer'
 import QuoteGallery from '../../../Json/Gallery';
 
 import './Gallery.css'
 
 class Gallery extends Component {
+  constructor() {
+    super();
+    this.state = { data: [] };
+  }
+
+  componentDidMount() {
+    fetch(`/Projects`)
+      .then(res => res.json())
+      .then(json => this.setState({ data: json }));
+  }
+
   render() {
-    const Categories= CategoriesJSON.map((jsonItem) =>
+    const Categories= this.state.data.map((jsonItem) =>
         <Card item={jsonItem}/>
     );
     return (

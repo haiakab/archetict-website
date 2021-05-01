@@ -1,0 +1,22 @@
+[
+    {
+        "category":"Archeticture",
+        "url":"Archeticture_Gallery",
+        "img":"./img/Categories/arch2.jpg"
+        
+    },
+    {
+        "category":"Interior Design",
+        "url":"InteriorDesign_Gallery",
+        "img":"./img/Categories/interiorDesign4.jpg"
+     
+    },
+    {
+        "category":"Kitchens",
+        "url":"Kitchens_Gallery",
+        "img":"./img/Categories/kitchens6.jpg"
+       
+    }
+    
+]
+

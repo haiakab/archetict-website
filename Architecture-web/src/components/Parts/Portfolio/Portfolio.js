@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Masony from "react-masonry-component";
 import InteriorDesignGaller from '../../../Json/InteriorDesign';
-import ArchetictGallery from '../../../Json/Archetict';
+// import ArchetictGallery from '../../../Json/Archetict';
 import Proj from '../../Pages/Proj/Proj';
 import "./Portfolio.css";
 
@@ -10,7 +10,25 @@ import "./Portfolio.css";
  class Portfolio extends React.Component {
   constructor(props){
     super(props);
+    this.state = { data: [] };
   } 
+
+
+  componentDidMount() {
+     if (this.props.galleryType == "archetict")
+      { 
+        fetch(`/ArchProjs`)
+        .then(res => res.json())
+        .then(json => this.setState({ data: json }));
+      }
+      else if(this.props.galleryType == "interior")
+      { 
+        fetch(`/InteriorDesignProjs`)
+        .then(res => res.json())
+        .then(json => this.setState({ data: json }));
+      }
+  }
+
   render(){
       const masonryOptions = {
         fitWidth: true,
@@ -19,12 +37,14 @@ import "./Portfolio.css";
         itemSelector: ".photo-item",
       }
       // show projects by type
-      if(this.props.galleryType == "interior")
-      var photos=InteriorDesignGaller;
-      else if (this.props.galleryType == "archetict")
-      var photos=ArchetictGallery;
-      else if (this.props.galleryType == "Kitchens")
-      var photos=ArchetictGallery;
+      // if(this.props.galleryType == "interior")
+      // var photos=InteriorDesignGaller;
+      // else if (this.props.galleryType == "archetict")
+      // var photos=this.state.data;
+      if (this.props.galleryType == "Kitchens")
+      var photos=this.state.data;
+      else
+      var photos=this.state.data;
 
     return (    
       <div>

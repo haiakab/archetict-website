@@ -1,16 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuItem from '../../General/MenuItem/MenuItem';
-import MenuJSON from '../../../Json/FooterItems';
+// import MenuJSON from '../../../Json/FooterItems';
 import aboutUsInf from '../../../Json/aboutJs';
 import './Footer.css'
 
 // this is a complicated footer component - 
 // it includes social media icons and about us section
 class Footer extends React.Component {
+  constructor() {
+    super();
+    this.state = { data: [] };
+  }
+
+  componentDidMount() {
+    fetch(`/Footer`)
+      .then(res => res.json())
+      .then(json => this.setState({ data: json }));
+  }
   render(){
     // read the footer items(icons) from json file
-    const MenuItems= MenuJSON.map((jsonItem) =>
+    const MenuItems= this.state.data.map((jsonItem) =>
     <MenuItem item={jsonItem}/>
   );
 

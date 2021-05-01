@@ -9,6 +9,8 @@ const Services = require ('./modules/Pages/Services/Services-controller.js');
 const Office = require ('./modules/Pages/Office/Office-controller.js');
 const Auth = require ('./modules/Pages/Auth/Login-controller.js');
 const Footer = require('./modules/General/Footer/Footer-controller');
+const ArchProjs = require('./modules/Pages/Projects/Archeticture-controller');
+const InteriorDesignProjs = require('./modules/Pages/Projects/InteriorDesign-controller');
 
 
 // const port = 8081;
@@ -25,6 +27,8 @@ app.use('/Services',Services)
 app.use('/Office',Office)
 app.use('/Auth',Auth)
 app.use('/Footer',Footer)
+app.use('/ArchProjs',ArchProjs)
+app.use('/InteriorDesignProjs',InteriorDesignProjs)
 
 
 app.listen(PORT, () => {

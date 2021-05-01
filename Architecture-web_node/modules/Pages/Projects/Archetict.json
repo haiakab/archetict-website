@@ -1,0 +1,47 @@
+[
+    {
+        "name": "YD Project NODE",
+        "imageUrl":"./img/Archeticture_Gallery/1.jpg",
+        "id":"1"
+       
+    },
+    {
+        "name": "YD Project NODE",
+        "imageUrl":"./img/Archeticture_Gallery/2.jpg",
+        "id":"2"
+       
+    },
+    {
+        "name": "YD Project",
+        "imageUrl":"./img/Archeticture_Gallery/3.jpg",
+        "id":"3"
+        
+    },
+    {
+        "name": "YD Project",
+        "imageUrl":"./img/Archeticture_Gallery/4.jpg",
+        "id":"4"
+       
+    },
+    {
+        "name": "YD Project",
+        "imageUrl":"./img/Archeticture_Gallery/5.jpg",
+        "id":"5"
+      
+    },
+    {
+        "name": "YD Project",
+        "imageUrl":"./img/Archeticture_Gallery/6.jpg",
+        "id":"6"
+     
+    },
+    {
+        "name": "YD Project",
+        "imageUrl":"./img/Archeticture_Gallery/7.jpg",
+        "id":"7"
+   
+    
+    }
+    
+]
+
