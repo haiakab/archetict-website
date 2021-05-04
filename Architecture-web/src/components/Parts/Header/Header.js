@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Header.css';
-// import MenuItems from '../../General/MenuItem/MenuItems';
+//  import MenuItems from '../../General/MenuItem/MenuItems';
 import MenuItem from '../../General/MenuItem/MenuItem';
-import MenuJSON from '../../../Json/HeaderItems';
+// import MenuJSON from '../../../Json/HeaderItems';
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    // this.state = { data: [] };
+  }
+
   render()
   {
-    const MenuItems= MenuJSON.map((jsonItem) =>
+    const MenuItems= this.props.headerData.map((jsonItem) =>
         <MenuItem item={jsonItem} itemName={`${this.props.itemName}`}/>
     );
     return (

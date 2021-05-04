@@ -1,0 +1,40 @@
+[
+    {
+        "title":"HomeNode",
+        "url":"/",
+        "icon":"",
+        "type":1
+    },
+    {
+        "title":"Projects",
+        "url":"Gallery",
+        "icon":"",
+        "type":1
+    },
+    {
+        "title":"Services",
+        "url":"Services",
+        "icon":"",
+        "type":1
+    },
+    {
+        "title":"Office",
+        "url":"Office",
+        "icon":"",
+        "type":1
+    },
+    {
+        "title":"Contact Us",
+        "url":"ContactUs",
+        "icon":"",
+        "type":1
+    },
+    {
+        "title":"Login",
+        "url":"Auth",
+        "icon":"fas fa-user-plus px-2",
+        "type":2
+    }
+]
+
+ 

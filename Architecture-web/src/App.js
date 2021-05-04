@@ -13,6 +13,7 @@ import ProjectInfo from './components/Pages/Proj/Proj';
 import HomeSim from './components/Pages/Proj/HomeSim';
 import UserArea from './components/Pages/UserArea/UserArea';
 import MapContainer from './components/Parts/Maps/Maps'
+import Auth from './components/Pages/Auth/Auth'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Route path="/HomeSim" component={HomeSim} />
       <Route path="/UserArea" component={UserArea} />
       <Route path="/MapContainer" component={MapContainer} />
+      <Route path="/Auth" component={Auth} />
     </Switch>
     </div>
   );

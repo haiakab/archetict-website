@@ -21,14 +21,14 @@ app.get('/', function (req, res) {
   res.send('Home page')
 })
 
-app.use('/Projects',Projects)
+app.use('/Projects',Projects.GalleryPage)
 app.use('/ContactUs',ContactUs)
 app.use('/Services',Services)
 app.use('/Office',Office)
 app.use('/Auth',Auth)
-app.use('/Footer',Footer)
-app.use('/ArchProjs',ArchProjs)
-app.use('/InteriorDesignProjs',InteriorDesignProjs)
+// app.use('/Footer',Footer)
+// app.use('/ArchProjs',ArchProjs)
+// app.use('/InteriorDesignProjs',InteriorDesignProjs)
 
 
 app.listen(PORT, () => {

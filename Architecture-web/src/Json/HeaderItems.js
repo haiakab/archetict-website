@@ -34,7 +34,7 @@ const HeaderItems=[
     },
     {
         title:'Login',
-        url:'Login',
+        url:'Auth',
         icon:'fas fa-user-plus px-2',
         type:2
     },

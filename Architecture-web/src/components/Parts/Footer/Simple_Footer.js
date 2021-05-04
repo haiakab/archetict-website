@@ -4,19 +4,19 @@ import MenuItem from '../../General/MenuItem/MenuItem';
 import './Footer.css'
 
 export class Simple_Footer extends Component {
-    constructor() {
-        super();
-        this.state = { data: [] };
+    constructor(props) {
+        super(props);
+        // this.state = { data: [] };
       }
     
-      componentDidMount() {
-        fetch(`/Footer`)
-          .then(res => res.json())
-          .then(json => this.setState({ data: json }));
-      }
+      // componentDidMount() {
+      //   fetch(`/Footer`)
+      //     .then(res => res.json())
+      //     .then(json => this.setState({ data: json }));
+      // }
     
     render() {
-        const MenuItems= this.state.data.map((jsonItem) =>
+        const MenuItems= this.props.footerData.map((jsonItem) =>
         <MenuItem item={jsonItem} itemName={`${this.props.itemName}`}/>
       );
         return (

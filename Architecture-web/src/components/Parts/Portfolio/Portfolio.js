@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Masony from "react-masonry-component";
-import InteriorDesignGaller from '../../../Json/InteriorDesign';
+// import InteriorDesignGaller from '../../../Json/InteriorDesign';
 // import ArchetictGallery from '../../../Json/Archetict';
 import Proj from '../../Pages/Proj/Proj';
 import "./Portfolio.css";
@@ -17,13 +17,13 @@ import "./Portfolio.css";
   componentDidMount() {
      if (this.props.galleryType == "archetict")
       { 
-        fetch(`/ArchProjs`)
+        fetch(`/Projects/ArchProjs`)
         .then(res => res.json())
         .then(json => this.setState({ data: json }));
       }
       else if(this.props.galleryType == "interior")
       { 
-        fetch(`/InteriorDesignProjs`)
+        fetch(`/Projects/InteriorDesignProjs`)
         .then(res => res.json())
         .then(json => this.setState({ data: json }));
       }
