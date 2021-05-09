@@ -11,21 +11,19 @@ const Auth = require ('./modules/Pages/Auth/Login-controller.js');
 const Footer = require('./modules/General/Footer/Footer-controller');
 const ArchProjs = require('./modules/Pages/Projects/Archeticture-controller');
 const InteriorDesignProjs = require('./modules/Pages/Projects/InteriorDesign-controller');
-
+const Client = require('./modules/Pages/Client/Client-controller');
 
 // const port = 8081;
 
 
 // GET method route
-app.get('/', function (req, res) {
-  res.send('Home page')
-})
-
-app.use('/Projects',Projects.GalleryPage)
+app.get('/Home', Home.HomePage)
+app.use('/Projects',Projects)
 app.use('/ContactUs',ContactUs)
 app.use('/Services',Services)
 app.use('/Office',Office)
 app.use('/Auth',Auth)
+app.use('/Client',Client)
 // app.use('/Footer',Footer)
 // app.use('/ArchProjs',ArchProjs)
 // app.use('/InteriorDesignProjs',InteriorDesignProjs)

@@ -1,0 +1,34 @@
+{
+    "LeftContent": 
+        {
+            "first": "We design to Communicate",
+            "second": "We design to Create",
+            "third": "We design to Inspire"
+            
+        },
+    "RightContent": 
+        {
+            "logoTitle": "Architecture & interior design",
+            "img" : "./img/logo/logo.png"
+            
+        },
+    "Services": 
+        {
+            "title": "Our  Specialization",
+
+            "services":[
+                {"name":"3D Models"},
+                {"name":"Architecture"},
+                {"name":"Interior Design"},
+                {"name":"Kitchens"}
+            ]
+        
+        }
+        
+}
+
+
+
+
+
+

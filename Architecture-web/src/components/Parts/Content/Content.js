@@ -11,11 +11,11 @@ class Content extends React.Component {
     <>
     <div id="content" class="container-fluid">
      <div className=" row">
-        <LeftContent />
-        <RightContent />
+        <LeftContent content={this.props.content}/>
+        <RightContent content={this.props.content}/>
       </div>
       <div className="container-fluid ml-0 mr-0">
-      <MiddleContent/>
+      <MiddleContent content={this.props.content}/>
       </div>
     </div>
     </>

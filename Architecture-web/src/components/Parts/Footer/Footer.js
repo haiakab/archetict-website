@@ -1,26 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuItem from '../../General/MenuItem/MenuItem';
-// import MenuJSON from '../../../Json/FooterItems';
-import aboutUsInf from '../../../Json/aboutJs';
 import './Footer.css'
 
 // this is a complicated footer component - 
 // it includes social media icons and about us section
 class Footer extends React.Component {
-  constructor() {
-    super();
-    this.state = { data: [] };
+  constructor(props) {
+    super(props);
   }
 
-  componentDidMount() {
-    fetch(`/Footer`)
-      .then(res => res.json())
-      .then(json => this.setState({ data: json }));
-  }
   render(){
     // read the footer items(icons) from json file
-    const MenuItems= this.state.data.map((jsonItem) =>
+    const MenuItems= this.props.footerData.map((jsonItem) =>
     <MenuItem item={jsonItem}/>
   );
 
@@ -33,7 +25,15 @@ return (
     <div class="hr_1 container-fluid"></div>
   </div>
   <div id="aboutUs" class="txtFont text-center pt-1">
-    <div dangerouslySetInnerHTML={{__html:aboutUsInf}}></div>
+    {/* <div dangerouslySetInnerHTML={{__html:aboutUsInf}}></div> */}
+    <h2 class="mt-4"> {this.props.AboutUsInfo.title} </h2> 
+    <h5 class="mt-4"> {this.props.AboutUsInfo.firstSent} </h5> 
+    <p class="mt-3"> {this.props.AboutUsInfo.seconSent}
+    <br/>  {this.props.AboutUsInfo.thirdSent}
+    <br/> {this.props.AboutUsInfo.forthSent}
+     {this.props.AboutUsInfo.fifthSent}
+    </p> 
+
   </div>
   <ul className=" list-inline text-center pt-5 mt-5 pb-3">
     {MenuItems}

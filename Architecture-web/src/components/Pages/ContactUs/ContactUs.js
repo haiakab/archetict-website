@@ -10,14 +10,27 @@ import './ContactUs.css'
 
 
 class ContactUs extends React.Component {
+  constructor() {
+    super();
+    this.state = { data: [] };
+  }
+
+  componentDidMount() {
+    fetch(`/Projects`)
+      .then(res => res.json())
+      .then(json => this.setState({ data: json }));
+  }
+
   render(){
+    if (this.state.data.length===0)
+        return (<p>ops</p>);
     // read the cards info from json file
     const ContactUsCards= ContactJSON.map((jsonItem) =>
     <ContactUsCard item={jsonItem}/>
     );
     return(
     <div className="container-fluid bgCont pl-0 pr-0 ml-0 mr-0">
-      <Header itemName="txtHeaderColor2"/>
+      <Header itemName="txtHeaderColor2" headerData={this.state.data.Header}/>
       <div id="content" class="mt-5 pt-5">
         {/* Welcome section */}
         <div id="welcome" class="container text-center titleFont">
