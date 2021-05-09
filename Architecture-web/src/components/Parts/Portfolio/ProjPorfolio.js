@@ -5,18 +5,18 @@ import  './Portfolio.css';
 
 
 class ProjPorfolio extends Component {
-    constructor(){
-        super();
-        this.state = { data: [] };
-      } 
+    // constructor(){
+    //     super();
+    //     this.state = { data: [] };
+    //   } 
     
-      componentDidMount() {
-            fetch(`/InteriorDesignProjs`)
-            .then(res => res.json())
-            .then(json => this.setState({ data: json }));
-      }  
+    //   componentDidMount() {
+    //         fetch(`/Projects/InteriorDesignProjs`)
+    //         .then(res => res.json())
+    //         .then(json => this.setState({ data: json }));
+    //   }  
     render() {
-        const projImages= this.state.data[2].imagesArr.map((jsonItem) =>
+        const projImages= this.props.data[2].imagesArr.map((jsonItem) =>
         <ProjImage item={jsonItem}/>
     );
         return (

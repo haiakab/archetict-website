@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './MiddleContent.css'
 import Service from '../../General/Service/Service';
-import ServicesJSON from '../../../Json/Services';
+
 
 class MiddleContent extends Component {
     render() {

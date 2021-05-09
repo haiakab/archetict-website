@@ -19,7 +19,7 @@ const Client = require('./modules/Pages/Client/Client-controller');
 // GET method route
 app.get('/Home', Home.HomePage)
 app.use('/Projects',Projects)
-app.use('/ContactUs',ContactUs)
+app.use('/ContactUs',ContactUs.ContactUsPage)
 app.use('/Services',Services)
 app.use('/Office',Office)
 app.use('/Auth',Auth)

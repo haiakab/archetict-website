@@ -16,7 +16,7 @@ class ContactUs extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`/Projects`)
+    fetch(`/ContactUs`)
       .then(res => res.json())
       .then(json => this.setState({ data: json }));
   }

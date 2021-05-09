@@ -1,10 +1,9 @@
 var express = require('express')
 var router = express.Router()
-
-// define the home page route
-router.get('/', function (req, res) {
-  res.send(' ContactUs page')
-})
+const ContactUsDB = require('./ContactUs-DB');
 
 
-module.exports = router
+module.exports.ContactUsPage = (req,res) => {
+  res.json(ContactUsDB.ContactUsPage())
+}
+
