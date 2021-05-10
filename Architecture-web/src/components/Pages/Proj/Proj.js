@@ -15,9 +15,10 @@ export default class Proj extends Component {
         super();
         this.state = { data: [] };
       } 
+
     
       componentDidMount() {
-            fetch(`/Projects/InteriorDesignProjs`)
+            fetch(`/Projects?Category=interior`)
             .then(res => res.json())
             .then(json => this.setState({ data: json }));
       }    
@@ -25,21 +26,21 @@ export default class Proj extends Component {
         if (this.state.data.length===0)
         return (<p>ops</p>);
         console.log(" PROSJJJS " + this.state.data.length);
-        const projDetails= this.state.data[2].detailedImages.map((jsonItem) =>
+        const projDetails= this.state.data.Category[2].detailedImages.map((jsonItem) =>
         <InfoItem item={jsonItem}/>
     );
-        const photo = this.state.data[2].imageUrl;
+        const photo = this.state.data.Category[2].imageUrl;
         return (
             <div>
                 <div class="card-bg  text-white border-0 Proj-bg "> 
                     <img src={photo} class=" Proj-bg" alt="Responsive image"></img> 
                     <div class="card-img-overlay materials  ">
-                    <Materials data={this.state.data}/>    
+                    <Materials data={this.state.data.Category}/>    
                     </div> 
                 </div> 
                 <HomeSim className="container m-0"/>
                 {projDetails}
-                <ProjPorfolio data={this.state.data}/>
+                <ProjPorfolio data={this.state.data.Category}/>
              </div>
         )
     }

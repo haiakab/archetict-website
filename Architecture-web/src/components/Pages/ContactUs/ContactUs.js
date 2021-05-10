@@ -25,7 +25,7 @@ class ContactUs extends React.Component {
     if (this.state.data.length===0)
         return (<p>ops</p>);
     // read the cards info from json file
-    const ContactUsCards= ContactJSON.map((jsonItem) =>
+    const ContactUsCards= this.state.data.Content.map((jsonItem) =>
     <ContactUsCard item={jsonItem}/>
     );
     return(

@@ -5,11 +5,17 @@ var InteriorDesignProjs = require('./InteriorDesign-controller');
 const ProjectsDB = require('./Projects-DB');
 
 
-router.get('/',(req,res) => {
-    res.json(ProjectsDB.GalleryPage())
+module.exports.GalleryPage = (req,res) => {
+    const category = req.query.Category
+    res.json(ProjectsDB.GalleryPage(category))
 }
-)
-router.use("/ArchProjs",ArchProjs);
-router.use("/InteriorDesignProjs",InteriorDesignProjs);
 
-module.exports = router
+
+// router.get('/',(req,res) => {
+//     res.json(ProjectsDB.GalleryPage())
+// }
+// )
+// router.use("/ArchProjs",ArchProjs);
+// router.use("/InteriorDesignProjs",InteriorDesignProjs);
+
+// module.exports = router
