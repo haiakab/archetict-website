@@ -12,18 +12,18 @@ const Footer = require('./modules/General/Footer/Footer-controller');
 const ArchProjs = require('./modules/Pages/Projects/Archeticture-controller');
 const InteriorDesignProjs = require('./modules/Pages/Projects/InteriorDesign-controller');
 const Client = require('./modules/Pages/Client/Client-controller');
+const Test = require('./modules/General/db.js');
 
-// const port = 8081;
 
 
 // GET method route
 app.get('/Home', Home.HomePage)
 app.get('/Projects',Projects.GalleryPage)
 app.get('/ContactUs',ContactUs.ContactUsPage)
-app.use('/Services',Services)
-app.use('/Office',Office)
+app.get('/Services',Services)
+app.get('/Office',Office)
 app.use('/Auth',Auth)
-app.use('/Client',Client)
+// app.get('/Test',Test.test)
 // app.use('/Footer',Footer)
 // app.use('/ArchProjs',ArchProjs)
 // app.use('/InteriorDesignProjs',InteriorDesignProjs)

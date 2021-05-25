@@ -3,7 +3,7 @@ var router = express.Router()
 const HomeDB = require('./Home-DB');
 
 
-module.exports.HomePage = (req,res) => {
-  res.json(HomeDB.HomePage())
+module.exports.HomePage = async (req,res) => {
+  res.json( await HomeDB.HomePage())
 }
 

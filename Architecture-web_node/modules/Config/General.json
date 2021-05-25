@@ -1,6 +1,17 @@
 {
     "nodeJs": {
-      "HOST": "localhost",
       "PORT": 8081
+    },
+
+    "DataBase": {
+      "HOST": "localhost",
+      "USER":"root" ,
+      "PASSWORD" : "" ,
+      "DATABASE" : "ArchDB" 
+   
     }
   }
+
+
+
+  

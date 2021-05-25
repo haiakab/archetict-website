@@ -20,19 +20,6 @@ import "./Portfolio.css";
     fetch(`/Projects?Category=`+ this.props.galleryType)
          .then(res => res.json())
          .then(json => this.setState({ data: json }));
-
-    //  if (this.props.galleryType == "archetict")
-    //   { 
-    //     fetch(`/Projects?Category=ArchProjs`)
-    //     .then(res => res.json())
-    //     .then(json => this.setState({ data: json }));
-    //   }
-    //   else if(this.props.galleryType == "interior")
-    //   { 
-    //     fetch(`/Projects?Category=InteriorDesignProjs`)
-    //     .then(res => res.json())
-    //     .then(json => this.setState({ data: json }));
-    //   }
   }
 
   render(){
@@ -45,11 +32,7 @@ import "./Portfolio.css";
         gutter: 30,
         itemSelector: ".photo-item",
       }
-      // show projects by type
-      // if(this.props.galleryType == "interior")
-      // var photos=InteriorDesignGaller;
-      // else if (this.props.galleryType == "archetict")
-      // var photos=this.state.data;
+   
       if (this.props.galleryType == "Kitchens")
       var photos=this.state.data.Category;
       else
@@ -66,7 +49,7 @@ import "./Portfolio.css";
         >
           {/* by click on each project - an information page will appear*/}
           {photos.map((photo) => (
-            <a href="ProjectInfo" ><li className={`photo-item container hovereffect2`} >
+            <a href="ProjectInfo"><li className={`photo-item container hovereffect2`} >
               <img src={photo.imageUrl} alt=""/>
               <div class="card-img-overlay">
               <div class="overlay2 text-center hovereffect2">

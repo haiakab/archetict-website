@@ -4,6 +4,9 @@
     margin: 50px auto;
 }
 
+.ProtItem{
+ height: 350px;
+}
 .photo-item {
     display: flex;
     width: 440px;

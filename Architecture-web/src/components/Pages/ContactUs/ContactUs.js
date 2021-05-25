@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Redirect, Route } from 'react-router-dom'
 import { Modal, Button , Form} from "react-bootstrap";
 import ModalHeader from 'react-bootstrap/ModalHeader';
 import Header from '../../Parts/Header/Header'
 import ContactUsCard from '../../General/Cards/ContactUsCard'
 import CardWithModal from '../../General/Cards/CardWithModal'
 import ContactJSON from '../../../Json/ContactUs'
+import Gallery from '../Gallery/Gallery';
 import './ContactUs.css'
 
 
 class ContactUs extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { data: [] };
   }
 
@@ -20,7 +22,23 @@ class ContactUs extends React.Component {
       .then(res => res.json())
       .then(json => this.setState({ data: json }));
   }
-
+  // setRedirect = () => {
+  //   this.setState({
+  //     redirect: true
+  //   })
+  //   this.renderRedirect();
+  // }
+  // renderRedirect = () => {
+  //   console.log("State is :" + this.state.redirect);
+  //   if (this.state.redirect) {
+  //     return (
+  //     // <Redirect to='/Gallery'/>
+  //     <Route path="/">
+  //       <Redirect from='/ContactUs' to='/Gallery'/> : <Gallery/>
+  //     </Route>
+  //     )
+  //   }
+  // }
   render(){
     if (this.state.data.length===0)
         return (<p>ops</p>);

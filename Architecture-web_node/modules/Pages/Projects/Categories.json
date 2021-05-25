@@ -1,13 +1,13 @@
 [
     {
         "category":"Archeticture NODE+ ",
-        "url":"Archeticture_Gallery",
+        "url":"archetict",
         "img":"./img/Categories/arch2.jpg"
         
     },
     {
         "category":"Interior Design",
-        "url":"InteriorDesign_Gallery",
+        "url":"interior",
         "img":"./img/Categories/interiorDesign4.jpg"
      
     },

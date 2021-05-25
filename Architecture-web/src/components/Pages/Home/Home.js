@@ -28,7 +28,7 @@ class Home extends React.Component{
     <div className="container mainBody">
     <Header styleName="header1" itemName="txtHeaderColor" headerData={this.state.data.Header}/>
     <Content content={this.state.data.Content} />
-    <Footer  footerData={this.state.data.Footer} AboutUsInfo={this.state.data.AboutUsInfo} />
+    <Footer  footerData={this.state.data.Footer} AboutUsInfo={this.state.data.AboutUsInfo[0]} />
     </div>
     </> 
     );

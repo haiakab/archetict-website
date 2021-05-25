@@ -11,7 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    background: -webkit-linear-gradient(left, #3d3d41, #1e2e2a);
+    background: -webkit-linear-gradient(right, #1e2e2a, #1e2e2a);
     /* font-family: 'Nunito', sans-serif; */
   }
   
@@ -90,10 +91,12 @@
     font-weight: 600;
     /* font-family: 'Nunito', sans-serif; */
     background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    background: -webkit-linear-gradient(right, #1e2e2a, #1e2e2a);
   }
   
   .submit:hover{
     background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+    background: -webkit-linear-gradient(left, #9da4a2, #1e2e2a);
   }
   
   .forgot-pass{

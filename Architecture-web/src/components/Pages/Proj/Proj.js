@@ -25,7 +25,7 @@ export default class Proj extends Component {
     render() {
         if (this.state.data.length===0)
         return (<p>ops</p>);
-        console.log(" PROSJJJS " + this.state.data.length);
+        console.log(" Category is  " + this.props.match.params.Category);
         const projDetails= this.state.data.Category[2].detailedImages.map((jsonItem) =>
         <InfoItem item={jsonItem}/>
     );
