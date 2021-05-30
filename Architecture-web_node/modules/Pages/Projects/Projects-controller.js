@@ -5,7 +5,7 @@ var InteriorDesignProjs = require('./InteriorDesign-controller');
 const ProjectsDB = require('./Projects-DB');
 
 
-module.exports.GalleryPage = (req,res) => {
+module.exports.GalleryPage = async (req,res) => {
     const category = req.query.Category
-    res.json(ProjectsDB.GalleryPage(category))
+    res.json( await ProjectsDB.GalleryPage(category))
 }

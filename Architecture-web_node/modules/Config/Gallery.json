@@ -1,0 +1,15 @@
+{
+    "CategoryID": {
+      "ARCH": 1,
+      "INTERIOR":2 ,
+      "KITCEHNS" : 3 
+    },
+
+    "Images":{
+        "MAIN" : 1,
+        "MATERIAl":2,
+        "DETAILED":3,
+        "GALLERY":4
+    }
+
+  }

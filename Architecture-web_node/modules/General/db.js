@@ -26,6 +26,7 @@
           });
 
   var DbQuery = util.promisify(con.query).bind(con);
+  console.log("result is " + DbQuery.result);
   module.exports = {DbQuery};
 
 // module.exports.test = (DbQuery) => {

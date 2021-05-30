@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import GoogleLogin from 'react-google-login'
+import $ from "jquery";
 import './Auth.css';
 
 export class Auth extends Component {
@@ -32,6 +34,23 @@ export class Auth extends Component {
         const body = await response.text();
         this.setState({ responseToPost: body });
       };
+
+
+ // document.getElementById('.img-btn').addEventListener('click', function()
+// 	{
+// 		document.getElementById('.cont').classList.toggle('s-signup')
+// 	}
+// );
+  componentDidMount() {
+    $('.img-btn').click(function() {
+      $('.cont').toggleClass('s-signup');
+    });
+  }
+
+  responseGoogle=(response)=>{
+      console.log(response);
+      console.log(response.profileObj);
+  }
     render() {
         return (
             <div class="auth">
@@ -64,25 +83,34 @@ export class Auth extends Component {
                         <button class="submit" type="button" onClick={this.handleSubmit}> Sign In </button>
                         <p class="forgot-pass"> Forgot Password ? </p>
                         <p>{this.state.responseToPost}</p>
-                        <div class="social-media">
+                        <div>
+                            <GoogleLogin
+                            clientId="1088933812059-049k65k95k3godg5fbj4vtau26te2mjd.apps.googleusercontent.com"
+                            buttonText="Login with your google account"
+                            onSuccess={this.responseGoogle}
+                            onFailure={this.responseGoogle}
+                            cookiePolicy={'single_host_origin'}
+                            />
+                        </div>
+                        {/* <div class="social-media">
                             <ul>
                                 <li><img src="img/social-media/facebook.png"/></li>
                                 <li><img src="img/social-media/twitter.png"/></li>
                                 <li><img src="img/social-media/linkedin.png"/></li>
                                 <li><img src="img/social-media/instagram.png"/></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </form>
                     
                     <div class="sub-cont">
                         <div class="img">
-                            {/* <div class="img-text">
+                            <div class="img-text m-in">
                                 <h2>New here?</h2>
-                                <p>Sing up and discover great amount of new opportunities! </p>
-                            </div> */}
-                            <div class="img-text">
+                                <p>Sign up and discover great amount of new opportunities! </p>
+                            </div>
+                            <div class="img-text m-up">
                                 <h2>One of us?</h2>
-                                <p>If yoy already has an account, just sign in. We'ev missed you! </p>
+                                <p>If yoy already has an account, just sign in. We've missed you! </p>
                             </div>
                             <div class="img-btn"> 
                             

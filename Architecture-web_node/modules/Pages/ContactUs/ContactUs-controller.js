@@ -3,7 +3,7 @@ var router = express.Router()
 const ContactUsDB = require('./ContactUs-DB');
 
 
-module.exports.ContactUsPage = (req,res) => {
-  res.json(ContactUsDB.ContactUsPage())
+module.exports.ContactUsPage = async (req,res) => {
+  res.json(await ContactUsDB.ContactUsPage())
 }
 

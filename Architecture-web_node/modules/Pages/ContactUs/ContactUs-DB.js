@@ -4,9 +4,9 @@ const contsctUsContent = require('./ContactUs.json');
 
 
 
-module.exports.ContactUsPage = () => {
+module.exports.ContactUsPage = async () => {
   return ({
-    "Header": HeaderJson.Header(),
+    "Header": await HeaderJson.Header(),
     "Content" : contsctUsContent
   });
 

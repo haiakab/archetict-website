@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import InteriorDesignGaller from '../../../Json/InteriorDesign';
+import InteriorDesignGallery from '../../../Json/InteriorDesign';
 import ProjImage from '../../General/InfoArea/ProjImage';
 import  './Portfolio.css';
 
@@ -16,8 +16,11 @@ class ProjPorfolio extends Component {
     //         .then(json => this.setState({ data: json }));
     //   }  
     render() {
-        const projImages= this.props.data[2].imagesArr.map((jsonItem) =>
+        
+        const projImages= InteriorDesignGallery[2].imagesArr.map((jsonItem) =>
         <ProjImage item={jsonItem}/>
+        // const projImages= this.props.data[2].imagesArr.map((jsonItem) =>
+        // <ProjImage item={jsonItem}/>
     );
         return (
             <div className="row justify-content-around mt-5">

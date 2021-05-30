@@ -18,6 +18,7 @@ import UserArea from './components/Pages/UserArea/UserArea';
 import MapContainer from './components/Parts/Maps/Maps'
 import Auth from './components/Pages/Auth/Auth';
 import Sumbit from './components/Pages/client-server/sumbit'
+import jQuery from './components/Pages/client-server/jQuery'
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
       <Route path="/MapContainer" component={MapContainer} />
       <Route path="/Auth" component={Auth} />
       <Route path="/Client" component={Sumbit} />
+      {/* <Route path="/jQuery" component={jQuery} /> */}
     </Switch>
     </div>
   );

@@ -50,10 +50,10 @@ import "./Portfolio.css";
           {/* by click on each project - an information page will appear*/}
           {photos.map((photo) => (
             <a href="ProjectInfo"><li className={`photo-item container hovereffect2`} >
-              <img src={photo.imageUrl} alt=""/>
+              <img src={photo.imgUrl} alt=""/>
               <div class="card-img-overlay">
               <div class="overlay2 text-center hovereffect2">
-                <h2 class="mt-auto"><div >{photo.name}</div></h2>
+                <h2 class="mt-auto"><div >{photo.ProjName}</div></h2>
               </div>
             </div>
             </li>

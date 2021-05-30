@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import InteriorDesignGaller from '../../../Json/InteriorDesign';
+import InteriorDesignGallery from '../../../Json/InteriorDesign';
 import './Materials.css'
 
 // materials plate for each project
@@ -16,9 +16,12 @@ class Materials extends React.Component {
   //       .then(json => this.setState({ data: json }));
   // }    
   render(){
-    const materialsPlate= this.props.data[0].materials.map((jsonItem) =>
+    const materialsPlate= InteriorDesignGallery[0].materials.map((jsonItem) =>
     <img item={jsonItem} class="rounded-circle img-circular mt-2 mr-2" alt="100x100" 
     src={jsonItem} data-holder-rendered="true"/>
+    // const materialsPlate= this.props.data[0].materials.map((jsonItem) =>
+    // <img item={jsonItem} class="rounded-circle img-circular mt-2 mr-2" alt="100x100" 
+    // src={jsonItem} data-holder-rendered="true"/>
     );
     return(
        <div class="material_box ">

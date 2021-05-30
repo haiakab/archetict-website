@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import InteriorDesignGaller from '../../../Json/InteriorDesign';
+import InteriorDesignGallery from '../../../Json/InteriorDesign';
 import Materials from '../../General/Materials/Materials';
 import HomeSim from './HomeSim';
 import InfoItem from '../../General/InfoArea/InfoItem';
@@ -26,10 +26,14 @@ export default class Proj extends Component {
         if (this.state.data.length===0)
         return (<p>ops</p>);
         console.log(" Category is  " + this.props.match.params.Category);
-        const projDetails= this.state.data.Category[2].detailedImages.map((jsonItem) =>
+        const projDetails= InteriorDesignGallery[2].detailedImages.map((jsonItem) =>
         <InfoItem item={jsonItem}/>
+        // const projDetails= this.state.data.Category[2].detailedImages.map((jsonItem) =>
+        // <InfoItem item={jsonItem}/>
     );
-        const photo = this.state.data.Category[2].imageUrl;
+        // const photo = this.state.data.Category[2].imageUrl;
+        const photo = InteriorDesignGallery[2].imageUrl;
+
         return (
             <div>
                 <div class="card-bg  text-white border-0 Proj-bg "> 
