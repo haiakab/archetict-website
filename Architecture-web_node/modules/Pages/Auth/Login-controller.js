@@ -20,7 +20,7 @@ router.post('/login', async (req, res) =>  {
 let getUserData = async (userInfo) => {
   console.log("USERS DATA : " + userInfo);
   let info= await loginDB.loginDB(userInfo);
-  if(info.length > 0){
+  if(info.length > 0 ){
     if(userInfo.password != info[0].password)
        return("uncorrect password!");
     return(info);

@@ -1,0 +1,75 @@
+
+
+
+.fxGkLM {
+    clear: both;
+    position: relative;
+    margin: .8rem 0;
+    /* margin-right: 1px; */
+
+    /* background-color: #ddd; */
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 2px;
+    }
+
+    
+.kSsWCo {
+        background-color: #fff;
+        border-right: 1px solid #ddd;
+    }
+
+.iconColSide{
+    background-color: black;
+}
+
+.MuiSvgIcon-root{
+    color:black;
+}
+
+.sidenav---sidenav---_2tBP
+{
+    background-color: blanchedalmond;
+    background-color: white;
+    background-color: rgb(235,232,228);
+    /* border-right-style: solid;
+    border-width: 2px; */
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    /* background-color: rgb(34, 25, 25); */
+}
+
+
+
+.sidenav---sidenav-toggle---1KRjR .sidenav---icon-bar---u1f02 {
+    background-color: black;
+}
+
+
+  
+  .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-:hover > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-:hover > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > * {
+    color: black;
+}
+
+
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > * {
+    color: black;
+    opacity:1;
+    
+}
+
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T::after, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-:hover.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T::after {
+     background: rgb(235,232,228); 
+    /* opacity: 0.2; */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
+
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-:hover > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-:hover > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f {
+    color: black;
+}
+
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f {
+    color: black;
+}
