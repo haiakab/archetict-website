@@ -33,20 +33,20 @@ class CardWithModal extends React.Component {
                 <Form.Group controlId="formBasicEmail" className="d-flex flex-column align-items-center " >
                   <Form.Control type="text" placeholder="Your Name *" className="mb-2" />                
                   <Form.Control type="email" placeholder="Your Email *" className="mb-2"/>
-                  <div className="d-flex mb-2 ">
-                    <Form.Control  as="select" className="col-3">
+                  <div className="d-flex mb-1 ">
+                    <Form.Control  as="select" className="col-3 mt-1">
                         <option>050</option>
                         <option>052</option>
                         <option>053</option>
                         <option>054</option>
                         <option>055</option>
                       </Form.Control>
-                      <Form.Control type="number" className="col-9" placeholder="Your Number *" />
+                      <Form.Control type="number" className="col-9  mb-2" placeholder="Your Number *" />
                   </div>
                   <Form.Control as="textarea" rows={4} placeholder="Your Message" className="mb-2"/>
-                  <Button variant="primary" className="align-self-center btn btn-light font-weight-bold mb-2" >
+                  {/* <Button variant="primary" className="align-self-center btn btn-light font-weight-bold mb-2" >
                   or you can set an appointment
-                  </Button>                 
+                  </Button>                  */}
                   <Modal.Footer className="no-bg mt-2" >
                     <Button variant="primary" className="align-self-end btn btn-light font-weight-bold">
                      Send Message

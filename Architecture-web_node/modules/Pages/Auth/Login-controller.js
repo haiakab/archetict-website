@@ -21,11 +21,11 @@ let getUserData = async (userInfo) => {
   let info= await loginDB.loginDB(userInfo);
   if(info.length > 0 ){
     if(userInfo.password != info[0].password)
-       return("uncorrect password!");
+       return("FALSE");
     return(info);
   }
   else
-    return("unavailable user");
+    return("FALSE2");
 } 
 
   

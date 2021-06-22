@@ -32,10 +32,22 @@ export class Auth extends Component {
           body: JSON.stringify({ password: this.state.password ,email: this.state.email, name: this.state.name }),
         });
         const body = await response.text();
+        this.setState({ responseToPost: body });
+        console.log("After loged in : "+ body);
 
-        if(body!=null)
+        if(body === 'FALSE')
+        {
+            this.setState({ responseToPost: "Uncorrect Password" });
+        }
+        else if(body === 'FALSE2')
+        {
+            this.setState({ responseToPost: "Unavailable User" });
+            
+        }
+        else
         {
             this.setState({ responseToPost: body });
+            
             this.props.history.push("/UserArea");
         }
       };
