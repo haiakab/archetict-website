@@ -20,6 +20,7 @@ import Auth from './components/Pages/Auth/Auth';
 import Sumbit from './components/Pages/client-server/sumbit'
 import jQuery from './components/Pages/client-server/jQuery'
 
+
 function App() {
 
  
@@ -34,11 +35,12 @@ function App() {
       <Route path="/archetict" component={Archeticture} />
       <Route path="/ProjectInfo" component={ProjectInfo} />
       <Route path="/Portfolio" component={Portfolio} />
-      <Route path="/HomeSim" component={HomeSim} />
+      {/* <Route path="/HomeSim" component={HomeSim} /> */}
       <Route path="/UserArea" component={UserArea} />
       <Route path="/MapContainer" component={MapContainer} />
       <Route path="/Auth" component={Auth} />
       <Route path="/Client" component={Sumbit} />
+    
       {/* <Route path="/jQuery" component={jQuery} /> */}
     </Switch>
     </div>

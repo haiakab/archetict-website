@@ -32,15 +32,15 @@ export class Auth extends Component {
           body: JSON.stringify({ password: this.state.password ,email: this.state.email, name: this.state.name }),
         });
         const body = await response.text();
-        this.setState({ responseToPost: body });
+
+        if(body!=null)
+        {
+            this.setState({ responseToPost: body });
+            this.props.history.push("/UserArea");
+        }
       };
 
 
- // document.getElementById('.img-btn').addEventListener('click', function()
-// 	{
-// 		document.getElementById('.cont').classList.toggle('s-signup')
-// 	}
-// );
   componentDidMount() {
     $('.img-btn').click(function() {
       $('.cont').toggleClass('s-signup');
@@ -55,17 +55,17 @@ export class Auth extends Component {
         return (
             <div class="auth">
                 <div class="cont">
-                    <form class="form" >
+                    <form class="form mt-4" >
                         <h2> Sign In </h2>
-                        <label >
+                        {/* <label >
                             <span>Your Name</span>
                             <input type="text" name="name" 
                                 // placeholder="email@gmail.com"
                                 value={this.state.name}
                                 onChange={e => this.setState({ name: e.target.value })}
                             />
-                        </label>
-                        <label>
+                        </label> */}
+                        <label className="pt-3">
                             <span>Email Address</span>
                             <input type="email" name="email" 
                                 // placeholder="email@gmail.com"

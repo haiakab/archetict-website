@@ -22,5 +22,5 @@
 
 .txtHeaderColor
 {
-    color: rgb(173,154,140);
+    color: rgb(173,154,140) !important;
 }

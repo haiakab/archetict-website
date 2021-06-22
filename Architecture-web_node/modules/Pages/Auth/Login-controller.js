@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 router.post('/login', async (req, res) =>  {
-  console.log(req.body);
   let result = await getUserData(req.body);
    res.send(result);
   //  `Server: "I received your POST request. Your Name is:  ${result.name}, Your email is: ${result.email},Your Password is: ${result.password}"`:result

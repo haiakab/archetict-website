@@ -11,7 +11,7 @@ import './Proj.css'
 export default class HomeSim extends Component {
   render() {
     return (
-      <model-viewer className="container-fluid p-0"
+      <model-viewer className="container-fluid p-0 ml-5"
         src="./new3DModel.glb"
         // ios-src={../Link/To/Model.usdz}
         alt='model name'

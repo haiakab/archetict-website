@@ -14,9 +14,9 @@
 
 import {Euler, Event as ThreeEvent, EventDispatcher, PerspectiveCamera, Spherical} from 'three';
 import {TouchAction} from '../features/controls.js';
-
 import {clamp} from '../utilities.js';
 import {Damper, SETTLING_TIME} from './Damper.js';
+
 
 export type InteractionPolicy = 'always-allow'|'allow-when-focused';
 export type TouchMode = 'rotate'|'scroll'|'zoom';
@@ -335,6 +335,16 @@ export class SmoothControls extends EventDispatcher {
   }
 
   /**
+   * Sets the smoothing decay time.
+   */
+  setDamperDecayTime(decayMilliseconds: number) {
+    this.thetaDamper.setDecayTime(decayMilliseconds);
+    this.phiDamper.setDecayTime(decayMilliseconds);
+    this.radiusDamper.setDecayTime(decayMilliseconds);
+    this.fovDamper.setDecayTime(decayMilliseconds);
+  }
+
+  /**
    * Adjust the orbital position of the camera relative to its current orbital
    * position. Does not let the theta goal get more than pi ahead of the current
    * theta, which ensures interpolation continues in the direction of the delta.
@@ -527,6 +537,8 @@ export class SmoothControls extends EventDispatcher {
           break;
         case 'scroll':
           return;
+        default:
+          break;
       }
 
       this.lastTouches = touches;
@@ -536,7 +548,7 @@ export class SmoothControls extends EventDispatcher {
 
     if (event.cancelable) {
       event.preventDefault();
-    };
+    }
   };
 
   private handleSinglePointerMove(pointer: Pointer) {
@@ -642,6 +654,8 @@ export class SmoothControls extends EventDispatcher {
       case KeyCode.RIGHT:
         relevantKey = true;
         this.userAdjustOrbit(KEYBOARD_ORBIT_INCREMENT, 0, 0);
+        break;
+      default:
         break;
     }
 
